@@ -148,6 +148,15 @@ header {
     .m_gnb {
         display: block;
     }
+    header {
+        height: 80px;
+    }
+    #head h1 img{
+        width: 80%;
+    }
+    .m_gnb img{
+        width: 80%;
+    }
 }
 
 /* main */
