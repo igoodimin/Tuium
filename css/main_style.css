@@ -1,0 +1,1028 @@
+@charset "UTF-8";
+/* 웹폰트 링크연결 */
+/* noto sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* noto serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+    background-color: #333;
+}
+
+/* 전체 구조 */
+/* 공통 */
+#container {
+    display: flex;
+}
+
+#sidebar {
+    background-color: #fff;
+    width: 10%;
+    /* 높이 생략 */
+}
+
+#sidebar ul {
+    opacity: 0;
+    position: fixed;
+    top: 100px;
+    left: 48px;
+    z-index: 9;
+    text-align: center;
+}
+
+#sidebar ul li:hover {
+    font-weight: bold;
+}
+
+#sidebar ul li:hover a {
+    color: #556539;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: 15px 0;
+    margin: 15px 0;
+}
+
+#sidebar ul li:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+#sidebar ul.header-scrolled {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#contents {
+    width: 90%;
+    position: relative;
+    /*모바일 헤더 fixed 용*/
+}
+
+/* 전체 구조 */
+/* mobile+tablet */
+@media(max-width:1500px) {
+    #sidebar {
+        display: none;
+    }
+
+    #contents {
+        width: 100%;
+    }
+}
+
+/* header */
+/* header - 공통 */
+header {
+    background-color: #fff;
+    height: 130px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+#head h1 img{
+    display: block;
+    width: 100%;
+}
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: inline-block;
+    margin: 8px 65px;
+}
+
+.gnb li:hover {
+    font-weight: bold;
+}
+
+.gnb li:hover a {
+    color: #556539;
+}
+
+.m_gnb {
+    display: none;
+}
+.m_gnb img{
+    display: block;
+    width: 100%;
+}
+
+/* tablet+mobile */
+@media (max-width:1500px) {
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9;
+    }
+    .gnb {
+        display: none;
+    }
+
+    .m_gnb {
+        display: block;
+    }
+}
+
+/* main */
+/* 공통 */
+#main {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_content {
+    width: 90%;
+}
+
+.main_book {
+    position: absolute;
+    top: 200px;
+    left: 55%;
+    margin-left: -540px;
+}
+
+.mobile_main_book {
+    display: none;
+}
+
+.main_content h2 {
+    margin-top: 70px;
+    position: absolute;
+    top: 660px;
+    left: 55%;
+    margin-left: -92.5px;
+}
+
+/* main - mobile+tablet */
+@media (max-width:1500px) {
+
+    .side_w {
+        display: none;
+    }
+
+    .main_content {
+        width: 100%;
+    }
+
+    .main_book {
+        left: 50%;
+    }
+
+    .main_content h2 {
+        left: 50%;
+    }
+}
+
+/* main - mobile */
+@media (max-width:1080px) {
+    .main_book {
+        display: none;
+    }
+
+    .mobile_main_book {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 315px;
+        margin-left: -300px;
+    }
+}
+
+/* section1 */
+#section1_wrap {
+    background: url(../images/section1/bg.jpg) no-repeat center;
+    height: 1167px;
+    color: #fff;
+}
+
+.section1 {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 76px;
+}
+
+.section1 h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section1 h2 {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.section1 p {
+    line-height: 40px;
+}
+
+.sign {
+    text-align: right;
+    margin-top: 44px;
+}
+
+/* tablet + mobile */
+@media (max-width:1080px) and (min-width:700px){
+    .section1 {
+        width: 60%;
+    }
+}
+/* mobile */
+@media (max-width:700px){
+    .section1 {
+        width: 80%;
+    }
+    .section1 p {
+        line-height: 28px;
+    }
+    .section1 h2 {
+        margin-bottom: 50px;
+    }
+}
+
+/* section2 */
+/* 공통 */
+#section2_wrap {
+    width: 90%;
+    margin: 0 auto;
+    border-top: #fff 1px solid;
+}
+
+.S2_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.S2_content_wrap {
+    margin: 80px 0;
+    font-family: 'Noto Serif KR'
+}
+
+.S2_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+}
+
+.S2_content li {
+    width: 22%;
+}
+
+.S2_content li a {
+    color: #fff;
+}
+
+.S2_content h3 {
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+    padding: 12.5px 0;
+}
+
+.book {
+    padding: 35px 0;
+}
+.book img{
+    width: 100%;
+}
+.S2_content h2 {
+    border-top: #fff 1px solid;
+    padding-top: 12.5px;
+}
+
+.S2_content p {
+    border-bottom: #fff 1px solid;
+    padding-bottom: 12.5px;
+}
+
+.fontsize_low {
+    font-size: 17px;
+}
+
+/* main - mobile+tablet */
+@media (max-width:1500px) {
+    .S2_content li {
+        width: 48%;
+    }
+
+    .S2_content li:nth-child(1),
+    .S2_content li:nth-child(2) {
+        padding-bottom: 60px;
+    }
+    .title{
+        text-align: right;
+    }
+    .S2_title h2 img{
+        width: 90%;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    margin: 60px 0;
+}
+
+/* section3 */
+/* 공통 */
+#section3_wrap {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Noto Serif KR'
+}
+
+.bold_line {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+
+#section3_wrap h2 {
+    text-align: right;
+}
+
+/* 시집 - 공통 */
+.S3_content {
+    margin-top: 40px;
+}
+
+.S3_content li {
+    width: 80%;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.S3_content li a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.S3_content li p {
+    font-size: 18px;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+.S3_content li h3 {
+    font-size: 24px;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+
+/* 시집 세부 설정 및 컬러 */
+.S3_content li:nth-child(1) {
+    border: #A78B54 10px solid;
+    border-right: none;
+    margin-left: 60px;
+}
+
+.S3_content li:nth-child(1) a {
+    color: #BC9D5F;
+}
+
+.S3_content li:nth-child(2) {
+    width: 70%;
+    border: #579481 10px solid;
+    border-right: none;
+    margin-left: 360px;
+}
+
+.S3_content li:nth-child(2) a {
+    color: #84C1AE;
+}
+
+.S3_content li:nth-child(3) {
+    border: #9E4D72 10px solid;
+    border-right: none;
+}
+
+.S3_content li:nth-child(3) a {
+    color: #FF63AB;
+}
+
+.S3_content li:nth-child(4) {
+    border: #5C7140 10px solid;
+    border-right: none;
+    margin-left: 260px;
+}
+
+.S3_content li:nth-child(4) a {
+    color: #819D5C;
+}
+
+/* main - mobile+tablet */
+@media (max-width:1500px) {
+    .S3_content li {
+        width: 100%;
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    .S3_content li a {
+        flex-wrap: wrap;
+    }
+
+    .S3_content li p {
+        padding: 0;
+    }
+
+    .S3_content li h3 {
+        padding: 24px 0 0 0;
+    }
+
+    .S3_content li:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .S3_content li:nth-child(2) {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .S3_content li:nth-child(4) {
+        margin-left: 0px;
+    }
+}
+
+/* mobile */
+@media (max-width:745px) {
+    .S3_content li h3 {
+        padding: 5px 0 0 0;
+    }
+}
+
+/* 산문집 - 공통*/
+.S3_content2 {
+    margin-top: 40px;
+}
+
+.S3_content2 li {
+    width: 80%;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.S3_content2 li a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.S3_content2 li p {
+    font-size: 18px;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+
+.S3_content2 li h3 {
+    font-size: 24px;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+
+/* 산문집 세부 설정 및 컬러 */
+.S3_content2 li:nth-child(1) {
+    border: #A78B54 10px solid;
+    border-right: none;
+    margin-left: 60px;
+    width: 65%;
+}
+
+.S3_content2 li:nth-child(1) a {
+    color: #BC9D5F;
+}
+
+.S3_content2 li:nth-child(2) {
+    border: #DEDEB4 10px solid;
+    border-right: none;
+    margin-left: 300px;
+    width: 70%;
+}
+
+.S3_content2 li:nth-child(2) a {
+    color: #DADFB5;
+}
+
+.S3_content2 li:nth-child(3) {
+    border: #EFB9B9 10px solid;
+    border-right: none;
+    width: 70%;
+}
+
+.S3_content2 li:nth-child(3) a {
+    color: #EFB9B9;
+}
+
+.S3_content2 li:nth-child(4) {
+    border: #6D6297 10px solid;
+    border-right: none;
+    margin-left: 30px;
+}
+
+.S3_content2 li:nth-child(4) a {
+    color: #B3A4F2;
+}
+
+.S3_content2 li:nth-child(5) {
+    border: #9CC9CC 10px solid;
+    border-right: none;
+    width: 85%;
+    margin-left: 160px;
+}
+
+.S3_content2 li:nth-child(5) a {
+    color: #9CC9CC;
+}
+
+.S3_content2 li:nth-child(6) {
+    border: #ADC494 10px solid;
+    border-right: none;
+    width: 70%;
+    margin-left: 100px;
+}
+
+.S3_content2 li:nth-child(6) a {
+    color: #ADC494;
+}
+
+.S3_content2 li:nth-child(7) {
+    border: #51808B 10px solid;
+    border-right: none;
+    width: 85%;
+}
+
+.S3_content2 li:nth-child(7) a {
+    color: #68ABBC;
+}
+
+@media (max-width:1500px) {
+    .S3_content2 li {
+        width: 100%;
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    .S3_content2 li a {
+        flex-wrap: wrap;
+    }
+
+    .S3_content2 li p {
+        padding: 0;
+    }
+
+    .S3_content2 li h3 {
+        padding: 24px 0 0 0;
+    }
+
+    .S3_content2 li:nth-child(1) {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .S3_content2 li:nth-child(2) {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .S3_content2 li:nth-child(3) {
+        width: 100%;
+    }
+
+    .S3_content2 li:nth-child(4) {
+        margin-left: 0px;
+    }
+
+    .S3_content2 li:nth-child(5) {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .S3_content2 li:nth-child(6) {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .S3_content2 li:nth-child(7) {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media (max-width:745px) {
+    .S3_content2 li h3 {
+        padding: 5px 0 0 0;
+    }
+}
+
+/* section4 */
+/* 공통 */
+#section4_wrap {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-top: #fff solid 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.swiper {
+    margin: 86px 40px 40px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide a {
+    color: #fff;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(1) {
+    /* 북마크 */
+    margin-left: 80px;
+    width: 340px;
+}
+
+.swiper-slide:nth-child(2) {
+    width: 5%;
+    height: 38vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(3) {
+    width: 1%;
+    height: 43vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(4) {
+    width: 1%;
+    height: 43vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(5) {
+    width: 3%;
+    height: 30vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(6) {
+    /* 머그컵 */
+    width: 340px;
+}
+
+.swiper-slide:nth-child(7) {
+    width: 1%;
+    height: 43vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(8) {
+    width: 1%;
+    height: 43vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(9) {
+    width: 1%;
+    height: 43vh;
+    background-color: #fff;
+    rotate: -5deg;
+    margin-left: 20px;
+}
+.swiper-slide:nth-child(10) {
+    /* 에코백 */
+    width: 340px;
+    margin-left: 50px;
+}
+
+.swiper-slide:nth-child(11) {
+    width: 8%;
+    height: 43vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(12) {
+    width: 1%;
+    height: 40vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(13) {
+    width: 1%;
+    height: 40vh;
+    background-color: #fff;
+}
+
+.swiper-slide:nth-child(14) {
+    width: 3%;
+    height: 38vh;
+    background-color: #fff;
+}
+
+/* mogile */
+@media (max-width:600px) {
+    .swiper {
+        margin:  0 0 40px 0;
+    }
+    .swiper-slide:nth-child(1) {
+        /* 북마크 */
+        margin-left: 0px;
+        width: 70vw;
+    }
+    .swiper-slide:nth-child(6) {
+        /* 머그컵 */
+        width: 70vw;
+    }
+    .swiper-slide:nth-child(10) {
+        /* 에코백 */
+        width: 70vw;
+        margin-left: 0px;
+    }
+}
+
+/* section5 */
+/* 공통 */
+#section5_wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.Thin_line{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 90px 0 70px 0;
+}
+
+.S5_container{
+    border: #fff solid 4px;
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box; 
+    font-family: 'Noto Serif KR'   
+}
+.list{
+    margin-bottom: 20px;
+}
+.list a{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px #fff;
+    border-bottom: none;
+    padding: 3%;
+}
+.list:hover{
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.list:hover a{
+    color: #333;
+}
+
+.S5_content{
+    background-color: #fff;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.S5_tit a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.S5_tit h3{
+    font-size: 24px;
+}
+.S5_box{
+    display: flex;
+    justify-content: space-between;
+}
+.S5_img{
+    width: 40%;
+}
+.S5_img img{
+    width: 100%;
+}
+.S5_txt{
+    width: 50%;
+    line-height: 30px;
+}
+/* container 2 */
+.S5_container2{
+    border: #fff solid 4px;
+    border-top: none;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.S5_container2 h3{
+    color: #fff;
+    border: #fff solid 4px;
+    width: 30%;
+    display: inline-block;
+    margin: 34.5px 0 146.5px 0;
+    padding: 23px 0;
+    font-size: 24px;
+}
+
+/* mobile */
+@media (max-width:900px){
+    .S5_box{
+        flex-wrap: wrap;
+    }
+    .S5_img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .S5_txt{
+        width: 100%;
+    }
+    .S5_container2 h3{
+        width: 50%; 
+    }
+    .list p{
+        display: none;
+    }
+    .list a{
+        justify-content: center;
+    }
+    .S5_tit p{
+        display: none;
+    }
+    .S5_tit a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* section6 */
+/* 공통 */
+#section6_wrap{
+    margin-top: 130px;
+    width: 90%;
+    margin: 0 auto;
+}
+#section6_wrap h2{
+    color: #fff;
+    width: 180px;
+    border-bottom: #fff solid 2px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.S6_content{
+    width: 100%;
+    margin-bottom: 130px;
+}
+.S6_content li{
+    margin-bottom: 4%;
+}
+.S6_content li a img{
+    width: 100%;
+}
+.S6_m_content{
+    display: none;
+}
+@media (max-width:900px){
+    .S6_content{
+        display: none;
+    }
+    .S6_m_content{
+        display: block;
+        width: 100%;
+        margin-bottom: 85px;
+    }
+    .S6_m_content li{
+        margin-bottom: 4%;
+    }
+    .S6_m_content li a img{
+        width: 100%;
+    }
+}
+
+/* footer */
+/* 공통 */
+#footer_wrap{
+    background-color: #fff;
+    padding: 38px 0;
+}
+footer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+.f_left{
+    margin-right: 30px;
+}
+.f_link{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    width: 100%;
+}
+.f_link li{
+    margin-right: 10px;
+}
+.f_link li a{
+    font-size: 12px;
+    font-weight: bold;
+}
+.f_txt{
+    font-size: 10px;
+    line-height: 15px;
+}
+.f_ikon{
+    display: flex;
+}
+.f_ikon li a img{
+    display: block;
+}
+.f_ikon li:nth-child(1){
+    margin-right: 18px;
+}
+/* mogile */
+@media (max-width:700px) {
+    footer{
+        justify-content: space-between;
+    }
+}
+@media (max-width:600px) {
+    footer{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .f_left{
+        margin-right: 0;
+    }
+    .f_ikon{
+        margin-bottom: 20px;
+    }
+    .f_link li{
+        margin-right: 1px;
+    }
+}

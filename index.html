@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>틔움북스</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="css/main_style.css">
+    <!--mobile_css-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <!--기본js소스-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--moble_js소스-->
+    <script src="js/jquery.mmenu.all.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/slide.css">
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- mobile nav JS-->
+    <script>
+        $(document).ready(function () {
+            $("#menu").mmenu({
+                "slidingSubmenus": false,
+                "navbar": { "title": "TUIUM BOOKS" },
+                "extensions": [
+                    "pagedim-black",
+                    "position-right",
+                    "theme-dark"
+                ]
+            });
+        });
+    </script>
+    <!-- side bar JS -->
+    <script>
+        $(document).ready(function () {
+
+            // Header scroll class
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1000) {
+                    $('#sidebar ul').addClass('header-scrolled');
+                } else {
+                    $('#sidebar ul').removeClass('header-scrolled');
+                }
+            })
+
+        });
+    </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+</head>
+
+<body>
+    <div id="container"> <!--container S-->
+        <div id="sidebar">
+            <ul>
+                <li><a href="index.html"><img src="images/sidebar/sidelogo.png" alt="sidelogo"></a></li>
+                <li><a href="#section1_wrap">틔움</a></li>
+                <li><a href="#section2_wrap">도서</a></li>
+                <li><a href="#section4_wrap">굿즈</a></li>
+                <li><a href="#section5_wrap">아카이브</a></li>
+                <li><a href="#section6_wrap">독자지원</a></li>
+            </ul>
+        </div>
+        <div id="contents"><!--contents S-->
+            <header>
+                <div id="head">
+                    <h1><a href="index.html"><img src="images/main/logo.png" alt="logo"></a></h1>
+                    <ul class="gnb">
+                        <li><a href="#section1_wrap">틔움</a></li>
+                        <li><a href="#section2_wrap">도서</a></li>
+                        <li><a href="#section4_wrap">굿즈</a></li>
+                        <li><a href="#section5_wrap">아카이브</a></li>
+                        <li><a href="#section6_wrap">독자지원</a></li>
+                    </ul>
+                    <div class="m_gnb">
+                        <div class="menu_link">
+                            <a href="#menu">
+                                <img src="images/main/btn.png" alt="menu">
+                            </a>
+                        </div>
+                        <nav id="menu">
+                            <ul class="mobile_gnb">
+                                <li><a href="index.html#section1_wrap">틔움</a></li>
+                                <li><a href="index.html#section2_wrap">도서</a></li>
+                                <li><a href="index.html#section4_wrap">굿즈</a></li>
+                                <li><a href="index.html#section5_wrap">아카이브</a></li>
+                                <li><a href="index.html#section6_wrap">독자지원</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div id="main">
+                <div class="main_content">
+                    <div class="main_book">
+                        <img src="images/main/book.png" alt="main_img">
+                    </div>
+                    <div class="mobile_main_book">
+                        <img src="images/main/m_book.png" alt="mobile_main_img">
+                    </div>
+                    <h2><img src="images/main/w_Tuium_logo.png" alt="logo_img"></h2>
+
+                </div>
+            </div>
+            <div id="section1_wrap">
+                <div class="section1">
+                    <h3 data-aos="fade-down" data-aos-duration="1000">틔움을 소개합니다</h3>
+                    <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="100">당신의 이야기를 싹 틔우는 틔움북스</h2>
+                    <p data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                        틔움 출판사는 시집 전문 출판사입니다.
+                        우리의 삶에서 빼놓을 수 없는 감성과 인간미를 담은 시집들을 출간하며, 작가와 독자가 함께하는 문학의 세계를 만들어가고 있습니다.
+                        <br><br>
+                        우리의 일상은 소중하고 소소하지만, 때로는 힘들기도 합니다.
+                        그러나 틔움 출판사에서는 작은 일상의 희로애락을 담아내며, 따뜻하고 공감할 수 있는 시집들을 출간하고 있습니다. 작가들이 담은 따뜻한 이야기들은 독자들의 마음을 따뜻하게
+                        해주고,
+                        삶의 지침이 됩니다.
+                        <br><br>
+                        또한 틔움 출판사는 작가와 독자가 함께 만들어가는 출판문화를 추구합니다. 작가와 독자가 하나되어, 서로의 이야기를 나누는 공간을 만들고, 소중한 순간들을 함께 나누며
+                        소통하는
+                        문학계의 생태계를 만들어나가고 있습니다.
+                        <br><br>
+                        우리는 이제까지 내면에 담겨있던 감성과 생각들을 담은 시집들을 출간하며, 많은 독자들과 함께 그 이야기들을 나누어왔습니다. 앞으로도 작가들과 독자들이 함께 하는 공간을
+                        지향하며,
+                        끊임없이 발전하는 틔움 출판사가 되겠습니다.
+                    </p>
+                    <p class="sign" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                        <img src="images/section1/sign.png" alt="sign">
+                    </p>
+                </div>
+            </div>
+            <div id="section2_wrap">
+                <div class="section2">
+                    <div class="S2_title">
+                        <h2><img src="images/section2/flag.png" alt="flag"></h2>
+                        <h3 class="title">Best Seller</h3>
+                    </div>
+                    <div class="S2_content_wrap">
+                        <ul class="S2_content" data-aos="fade-down" data-aos-duration="1000">
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 산문집 006</h3>
+                                    <div class="book"><img src="images/section2/book1.png" alt="book"></div>
+                                    <h2>산으로 간 문장들</h2>
+                                    <p>권수정 산문</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 산문집 008</h3>
+                                    <div class="book"><img src="images/section2/book2.png" alt="book"></div>
+                                    <h2>내가 아니라 그가 나의 꽃</h2>
+                                    <p>이원하 산문</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 산문집 007</h3>
+                                    <div class="book"><img src="images/section2/book3.png" alt="book"></div>
+                                    <h2>바쁜 것이 게으른 것이다</h2>
+                                    <p>이문재 산문</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 산문집 004</h3>
+                                    <div class="book"><img src="images/section2/book4.png" alt="book"></div>
+                                    <h2>안 느끼한 산문집</h2>
+                                    <p>강이슬 산문</p>
+                                </a></li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="S2_content" data-aos="fade-down" data-aos-duration="1000">
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 시인선 005</h3>
+                                    <div class="book"><img src="images/section2/book5.png" alt="book"></div>
+                                    <h2>나팔꽃 피는 창가에서</h2>
+                                    <p>김홍성 시집</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 시인선 002</h3>
+                                    <div class="book"><img src="images/section2/book6.png" alt="book"></div>
+                                    <h2><span class="fontsize_low"> 우리가 함께 장마를 볼 수도 있겠습니다</span></h2>
+                                    <p>박 준 시집</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 시인선 003</h3>
+                                    <div class="book"><img src="images/section2/book7.png" alt="book"></div>
+                                    <h2>모자는 인간을 만든다</h2>
+                                    <p>김상미 시집</p>
+                                </a></li>
+                            <li><a href="javascript:return false;">
+                                    <h3>틔움 시인선 004</h3>
+                                    <div class="book"><img src="images/section2/book8.png" alt="book"></div>
+                                    <h2><span class="fontsize_low">숲을 떠메고 간 새들의 푸른 어깨</span></h2>
+                                    <p>고찬규 시집</p>
+                                </a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="section3_wrap">
+                <div class="bold_line"></div>
+                <h2><img src="images/section3/flag1.png" alt="flag"></h2>
+                <div class="section3">
+                    <ul class="S3_content">
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 시인선 001 박 준 시집</p>
+                                <h3>당신의 이름을 지어다가 며칠은 먹었다</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 시인선 002 박 준 시집</p>
+                                <h3>우리가 함께 장마를 볼 수도 있겠습니다</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 시인선 003 김상미 시집</p>
+                                <h3>모자는 인간을 만든다</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 시인선 004 고찬규 시집</p>
+                                <h3>숲을 떠메고 간 새들의 푸른 어깨</h3>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="bold_line"></div>
+                <h2><img src="images/section3/flag2.png" alt="flag"></h2>
+                <div class="section3">
+                    <ul class="S3_content2">
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 034 지숙경 산문</p>
+                                <h3>숲속의 사계절</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 035 유용주 산문</p>
+                                <h3>우리는 그렇게 달을 보며 절을 올렸다</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 036 김영희 산문</p>
+                                <h3>사람도 꽃으로 필거야</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 037 조연호 산문</p>
+                                <h3>행복한 난청</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 038 윤설야 산문</p>
+                                <h3>너의 이야기를 쓰려던 건 아니었는데</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 039 권나무 산문</p>
+                                <h3>다정하다고 말해주세요</h3>
+                            </a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                                <p>틔움 산문집 040 한은형 산문</p>
+                                <h3>당신은 빙하 같지만 그래서 좋다고 말하는 사람이 있어</h3>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="bold_line"></div>
+            </div>
+            <div id="section4_wrap">
+                <h2><img src="images/section4/flag.png" alt="flag"></h2>
+                <!-- swiper-->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="javascript:return false;">
+                                <p><span class="bold">틔움 북마크</span>&nbsp; 3,500원</p>
+                                <br>
+                                <img src="images/section4/bookmark.png" alt="goods">
+                            </a></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"><a href="javascript:return false;">
+                                <p><span class="bold">틔움 머그컵</span>&nbsp; 10,500원</p>
+                                <br>
+                                <img src="images/section4/cup.png" alt="goods">
+                            </a></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide">
+                            <a href="javascript:return false;">
+                                <p><span class="bold">틔움 에코백</span>&nbsp; 9,700원</p>
+                                <br>
+                                <img src="images/section4/bag.png" alt="goods">
+                            </a>
+                        </div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="bold_line"></div>
+            </div>
+            <div id="section5_wrap">
+                <div class="Thin_line"></div>
+                <div class="S5_container">
+                    <!-- list 1 -->
+                    <div class="S5_content1 S5_content">
+                        <div class="S5_tit S5_tit1"><a href="javascript:return false;">
+                                <p>제 1호</p>
+                                <h3>바쁜 것이 게으른 것이다</h3>
+                                <p>2023. 04. 28.</p>
+                            </a></div>
+                        <div class="S5_box">
+                            <p class="S5_img"><img src="images/section5/S5_1.png" alt="img"></p>
+                            <p class="S5_txt">
+                                <span class="bold"> 실천 가능한 느림의 전략!</span>
+                                <br><br> 문명과 불화하는 문제의식과 문명통찰을 풀어놓은, 시인 이문재의 첫 산문집. 저자가 시인으로 활동한 지 25년 만에 내는 첫 산문집으로, 마치
+                                일기를
+                                쓰듯이,
+                                이곳저곳에서 들어오는 원고 부탁을 거절하지 않고 받아들인 결과다. 1990년대부터 여러 신문이나 잡지 등에 내놓은 원고 중 50여 편을 담아냈다. 책
+                                사이사이에는 다큐멘터리 사진가 강운구의 소나무 사진과도 만날 수 있다.
+
+                                저자는 반인간적인 문명의 급소를 발견하고, 그것을 건드리는 등 자신이 오랫동안 품어온 생각을 털어놓고 있다. 반인간적인 진화를 거듭하는 산업자본주의 문명의
+                                문제를 날카로운 눈으로 통찰하면서 '걷기', '슬로푸드' 등 인간다운 삶을 회복할, 인간적인 문명의 급소를 간절한 마음으로 제시한다. 그리고 아날로그 시대에서
+                                디지털 시대로 넘어온 자신의 경험을 고백하면서 우리와 공감을 형성하고 있다.
+
+                                이 책은 '일중독자'에서 '산책자'로 '망명'을 선택한 저자의 삶과 생각을 통해 21세기 도시에서 찾아낸 생태적인 삶을 건넨다. 아울러 생태적인 삶의 중심인
+                                '느림'을 일상에서 평화롭게 지속하도록 이끌고 있다. 또한 실천 가능한 느림의 전략으로 '걷기'를 추천하고, 자연이 깃든 순박한 음식인 '슬로푸드'를 먹을
+                                것을 권하면서, '걷기'나 '슬로푸드' 등에는 '나'에게로 돌아가는 복원의 길이 있다고 말한다. 이처럼 이 책은 생태적인 삶에 대한 권유를 담고 있다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list1 list"><a href="javascript:return false;">
+                            <p>제 1호</p>
+                            <h3>바쁜 것이 게으른 것이다</h3>
+                            <p>2023. 04. 28.</p>
+                        </a></div>
+                    <!-- list2 -->
+                    <div class="S5_content2 S5_content">
+                        <div class="S5_tit S5_tit2"><a href="javascript:return false;">
+                                <p>제 2호</p>
+                                <h3>우리 함께 장마를 볼 수도 있겠습니다</h3>
+                                <p>2023. 05. 30.</p>
+                            </a></div>
+                        <div class="S5_box">
+                            <p class="S5_img"><img src="images/section5/S5_2.jpg" alt="img"></p>
+                            <p class="S5_txt">
+                                <span class="bold"> 오늘의 내게 당도하는 말들, 과거에 있었던 기억의 한 풍경들</span>
+                                <br><br> 오늘의 내게 당도하는 말들, 과거에 있었던 기억의 한 풍경들
+
+                                단 한 권의 시집 《당신의 이름을 지어다가 며칠은 먹었다》와 단 한 권의 산문집 《운다고 달라지는 일은 아무것도 없겠지만》으로 독자들의 마음을 사로잡은 시인
+                                박준이 2012년 첫 시집 이후 6년 만에 펴낸 두 번째 시집 『우리가 함께 장마를 볼 수도 있겠습니다』. 지난 시집에서 상대에게 보살핌을 받았던 기억으로
+                                폐허가 된 자신의 자리를 돌보던 ‘나’는 이번 시집에서 당신을 돌보는 데까지 나아간다.
+
+                                이 시집의 화자인 ‘나’는 기다리는 사람이다. 화자 ‘나’가 기다리는 것은 미래의 무언가가 아닌, 과거에 서로를 다정하게 호출했던 안부의 말, 금세 잊어버릴
+                                수도 있었을 일상의 말들 등 과거에 이미 지나가버린 것들이다. 그렇게 ‘나’는 그 말들을 함께 나누었던 사람을 기다리면서, 화려하지는 않지만 당신이 먹으면
+                                좋을 소박한 음식을 준비하며 현재의 시간을 충실히 보낸다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list2 list"><a href="javascript:return false;">
+                            <p>제 2호</p>
+                            <h3>우리 함께 장마를 볼 수도 있겠습니다</h3>
+                            <p>2023. 05. 30.</p>
+                        </a></div>
+                    <!-- list3 -->
+                    <div class="S5_content S5_content3">
+                        <div class="S5_tit S5_tit3"><a href="javascript:return false;">
+                                <p>제 3호</p>
+                                <h3>너의 이야기를 쓰려던 건 아니었는데</h3>
+                                <p>2023. 06. 24.</p>
+                            </a></div>
+                        <div class="S5_box">
+                            <p class="S5_img"><img src="images/section5/S5_3.jpg" alt="img"></p>
+                            <p class="S5_txt">
+                                <span class="bold"> 〈유희열의 라디오천국〉 음악작가의 첫 에세이
+                                    <br> “반짝거리던 그때의 우리들 다들 잘 살고 있나요?”</span>
+                                <br><br>
+                                먹고살 걱정만으로 하루가, 한 달이 눈 깜짝할 새 흘러간다. 사랑이 사치처럼 느껴지는 시대, 그럼에도 우리는 사랑을 한다. 그리고 뒤따라오는 이별에 오래 가슴
+                                아파하는 사람들이 있다. ‘쿨한 태도’가 미덕으로 여겨지는 요즘이지만 연애의 끝이 담백하기만 할 수 있을까.
+
+                                〈유희열의 라디오천국〉 음악작가였던 윤설야, 그가 사랑과 이별에 대한 자전적인 에세이를 들고 왔다. 사랑 앞에서 절대 담담해질 수 없어 미련투성이였던 자신의
+                                경험담을 통해, 사랑의 의미를 다시금 생각하게 하고 끝나버린 관계를 여전히 붙들고 있는 이들에게 가만히 손을 내민다. 한 사람과 한 사람이 만나 사랑에 빠지고
+                                길게 이별하는 인생의 한 토막은, 비단 연인간의 사랑만이 아니라 가까운 사람의 부재와 상실을 오래도록 겪고 있는 이들에게 공감을 줄 수 있을 것이다.
+
+                                누군가의 노래 제목처럼 ‘결국 흔해 빠진 사랑 이야기’겠지만 그 순간만큼은 눈부신 젊음으로 가득했으리라. 지금은 ‘어떤 사람 A’가 돼버렸지만 그 사람은
+                                영원히 잊지 못할 주연 배우였으리라. 반짝거리던 그때의 우리들 다들 잘 살고 있나요? _유희열 추천사 중에서
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list list3"><a href="javascript:return false;">
+                            <p>제 3호</p>
+                            <h3>너의 이야기를 쓰려던 건 아니었는데</h3>
+                            <p>2023. 06. 24.</p>
+                        </a></div>
+                    <!-- list4 -->
+                    <div class="S5_content4 S5_content">
+                        <div class="S5_tit S5_tit4"><a href="javascript:return false;">
+                                <p>제 4호</p>
+                                <h3>산으로 간 문장들</h3>
+                                <p>2023. 07. 26.</p>
+                            </a></div>
+                        <div class="S5_box">
+                            <p class="S5_img"><img src="images/section5/S5_4.jpg" alt="img"></p>
+                            <p class="S5_txt">
+                                <span class="bold">나를 읽기</span>
+                                <br> <br>
+                                일단 책을 읽는다. 그리고 마음에 드는 문장을 골라 해석하고 싶은 대로 해석한다. 최대한 유리하게. 내 상황과 입장이 대변될 수 있게. 사실 그렇게 하지
+                                않으려고 해도 이미 내 마음이 그렇게 하고 있는 경우가 많다. 권위 있고 이름 난 저자의 책이면 더 좋다. 예를 들면 고전 같은 것들. 악의적으로 왜곡하지만
+                                않는다면야 저자가 본디 의도한 바가 무엇인지는 중요하지 않다(고 나는 생각한다). 모든 책은 독자에게 읽힐 때마다 새로 태어난다지 않는가.
+                                <br> <br>
+                                2018년 12월 부터 2019년 6월까지 '퍼킨스'라는 프로젝트를 통해 매주 한 편씩 발송했던 원고를 모았다. 주로 일상에 관한 수기를 썼는데, 공개되면
+                                일상이 위기에 처할 만한 격동적인 에피소드가 몇 있어 전부 싣지는 못했다. 요즘 내가 사는 모양은 이러한데 남들은 어떤지 묻고자 이 책을 던진다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list4 list"><a href="javascript:return false;">
+                            <p>제 4호</p>
+                            <h3>산으로 간 문장들</h3>
+                            <p>2023. 07. 26.</p>
+                        </a></div>
+                    <!-- list5 -->
+                    <div class="S5_content5 S5_content">
+                        <div class="S5_tit S5_tit5"><a href="javascript:return false;">
+                                <p>제 5호</p>
+                                <h3>당신의 이름을 지어다가 며칠은 먹었다</h3>
+                                <p>2023. 08. 08.</p>
+                            </a></div>
+                        <div class="S5_box">
+                            <p class="S5_img"><img src="images/section5/S5_5.jpg" alt="img"></p>
+                            <p class="S5_txt">
+                                <span class="bold">박준 시인이 전하는 떨림의 간곡함!</span>
+                                <br> <br>
+                                한국시의 새로운 패러다임을 제시하는 「문학동네시인선」 제32권 『당신의 이름을 지어다가 며칠은 먹었다』. 2008년 《실천문학》으로 등단, 2017 오늘의
+                                젊은 예술가상을 수상한 저자의 이번 시집은 전통적인 의미에서의 ‘서정(Lyric)’을 담은 시편들로 구성되어 있다. 작고 소외된 것들에 끝없이 관심을 두고
+                                지난 4년간 탐구해온 저자는 이 세계를 받아들이고 산다는 것, 그리고 그 안에서 마주하는 죽음의 순간들에 대한 짙은 사유를 우리에게 들려준다. ‘인천 발달’,
+                                ‘지금은 우리가’, ‘미인처럼 잠드는 봄날’ 등의 시편들과 함께 저자의 시집을 열렬히 동반하며 그가 시를 쓰던 몇몇 순간을 호명한 허수경 시인의 발문이
+                                수록되어 있다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list5 list"><a href="javascript:return false;">
+                            <p>제 5호</p>
+                            <h3>당신의 이름을 지어다가 며칠은 먹었다</h3>
+                            <p>2023. 08. 08.</p>
+                        </a></div>
+                </div>
+                <div class="S5_container2">
+                    <h3>틔움 아카이브</h3>
+                </div>
+                <div class="Thin_line"></div>
+            </div>
+            <div id="section6_wrap">
+                <h2>독자지원</h2>
+                <ul class="S6_content">
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/tit1.png" alt="tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/tit2.png" alt="tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/tit3.png" alt="tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/tit4.png" alt="tit">
+                        </a></li>
+                </ul>
+                <ul class="S6_m_content">
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/m_tit1.png" alt="m_tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/m_tit2.png" alt="m_tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/m_tit3.png" alt="m_tit">
+                        </a></li>
+                    <li data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0"><a href="javascript:return false;">
+                            <img src="images/section6/m_tit4.png" alt="m_tit">
+                        </a></li>
+                </ul>
+            </div>
+            <div id="footer_wrap">
+                <footer>
+                    <div class="f_left">
+                        <ul class="f_link">
+                            <li><a href="javascript:return false;">개인정보처리방침</a></li>
+                            <li><a href="javascript:return false;">|</a></li>
+                            <li><a href="javascript:return false;">이용약관</a></li>
+                            <li><a href="javascript:return false;">|</a></li>
+                            <li><a href="javascript:return false;">제휴문의</a></li>
+                            <li><a href="javascript:return false;">|</a></li>
+                            <li><a href="javascript:return false;">채용안내</a></li>
+                            <li><a href="javascript:return false;">|</a></li>
+                            <li><a href="javascript:return false;">찾아 오시는 길</a></li>
+                        </ul>
+                        <p class="f_txt">
+                            (주)틔움북스 | 121-898 서울 마포구 월드컵 북로4길 77 (3층)
+                            <br> 02)987-6543 | tuium@tuiumbooks.com
+                        </p>
+                    </div>
+                    <ul class="f_ikon">
+                        <li><a href="javascript:return false;">
+                                <img src="images/footer/f_1.png" alt="footer">
+                            </a></li>
+                        <li><a href="javascript:return false;">
+                                <img src="images/footer/f_2.png" alt="footer">
+                            </a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div><!--contents F-->
+    </div><!--container F-->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- section 5 popup JS-->
+    <script>
+        $(function () {
+            //popup S5_content 안보인다
+            $('.S5_content').hide();
+            //list1
+            //list a를 클릭하면,
+            $('.list1 a').click(function () {
+                //.S5_content1이 보인다.
+                $('.S5_content1').fadeIn(0);
+                $(this).hide();
+            });
+            //제목 S5_tit1을 클릭하면,
+            $('.S5_tit1').click(function () {
+                //S5_content1 popup이 사라진다.
+                $('.S5_content1').fadeOut(0);
+                $('.list1 a').show();
+            });
+            //list2
+            //list2 a를 클릭하면,
+            $('.list2 a').click(function () {
+                //.S5_content2이 보인다.
+                $('.S5_content2').fadeIn(0);
+                $(this).hide();
+            });
+            //제목 S5_tit2을 클릭하면,
+            $('.S5_tit2').click(function () {
+                //S5_content2 popup이 사라진다.
+                $('.S5_content2').fadeOut(0);
+                $('.list2 a').show();
+            });
+            //list3
+            //list3 a를 클릭하면,
+            $('.list3 a').click(function () {
+                //.S5_content3이 보인다.
+                $('.S5_content3').fadeIn(0);
+                $(this).hide();
+            });
+            //제목 S5_tit3을 클릭하면,
+            $('.S5_tit3').click(function () {
+                //S5_content3 popup이 사라진다.
+                $('.S5_content3').fadeOut(0);
+                $('.list3 a').show();
+            });
+            //list4
+            //list4 a를 클릭하면,
+            $('.list4 a').click(function () {
+                //.S5_content4이 보인다.
+                $('.S5_content4').fadeIn(0);
+                $(this).hide();
+            });
+            //제목 S5_tit4을 클릭하면,
+            $('.S5_tit4').click(function () {
+                //S5_content4 popup이 사라진다.
+                $('.S5_content4').fadeOut(0);
+                $('.list4 a').show();
+            });
+            //list5
+            //list5 a를 클릭하면,
+            $('.list5 a').click(function () {
+                //.S5_content5이 보인다.
+                $('.S5_content5').fadeIn(0);
+                $(this).hide();
+            });
+            //제목 S5_tit5을 클릭하면,
+            $('.S5_tit5').click(function () {
+                //S5_content5 popup이 사라진다.
+                $('.S5_content5').fadeOut(0);
+                $('.list5 a').show();
+            });
+        });
+    </script>
+    <!-- AOS -->
+     <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
