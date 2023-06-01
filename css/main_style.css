@@ -100,7 +100,7 @@ header {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    padding-top: 24px;
+    padding-top: 44px;
     box-sizing: border-box;
 }
 #head h1 img{
@@ -141,10 +141,12 @@ header {
         top: 0;
         z-index: 9;
     }
+    #head {
+        padding-top: 24px;
+    }
     .gnb {
         display: none;
     }
-
     .m_gnb {
         display: block;
     }
