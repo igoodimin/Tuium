@@ -394,6 +394,15 @@ header {
     .S2_title h2 img{
         width: 90%;
     }
+    .S2_content_wrap h3{
+        font-size: 16px;
+    }
+    .S2_content_wrap h2{
+        font-size: 18px;
+    }
+    .S2_content_wrap p{
+        font-size: 16px;
+    }
 }
 
 .line {
@@ -529,9 +538,20 @@ header {
 
 /* mobile */
 @media (max-width:745px) {
+    .S3_content li {
+        padding: 15px;
+    }
     .S3_content li h3 {
         padding: 5px 0 0 0;
     }
+    .S3_content li p {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    .S3_content li h3 {
+        font-size: 18px;
+        padding: 10px 0;
+    }   
 }
 
 /* 산문집 - 공통*/
@@ -696,6 +716,17 @@ header {
 @media (max-width:745px) {
     .S3_content2 li h3 {
         padding: 5px 0 0 0;
+    }
+    .S3_content2 li {
+        padding: 15px;
+    }
+    .S3_content2 li p {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    .S3_content2 li h3 {
+        font-size: 18px;
+        padding: 10px 0;
     }
 }
 
@@ -875,7 +906,7 @@ header {
     align-items: center;
     border: solid 2px #fff;
     border-bottom: none;
-    padding: 3%;
+    padding: 5% 10%;
 }
 .list:hover{
     background-color: #fff;
@@ -887,7 +918,7 @@ header {
 
 .S5_content{
     background-color: #fff;
-    padding: 5%;
+    padding: 8%;
     box-sizing: border-box;
 }
 .S5_tit a{
@@ -953,12 +984,25 @@ header {
     .list a{
         justify-content: center;
     }
+    .list h3{
+        font-size: 18px;
+    }
+    .S5_tit h3{
+        font-size: 18px;
+        font-weight: bold;
+    }
     .S5_tit p{
         display: none;
     }
     .S5_tit a{
         display: flex;
         justify-content: center;
+    }
+    .S5_txt{
+        font-size: 16px;
+    }
+    .S5_container2 h3{
+        font-size: 18px;
     }
 }
 
