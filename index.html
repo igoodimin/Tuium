@@ -45,7 +45,6 @@
                     $('#sidebar ul').removeClass('header-scrolled');
                 }
             })
-
         });
     </script>
     <!-- AOS -->
@@ -98,13 +97,30 @@
             <div id="main">
                 <div class="main_content">
                     <div class="main_book">
-                        <img src="images/main/book.png" alt="main_img">
+                            <video muted="" preload="flase" loop autoplay webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+                                <!--
+                                    미리 로드하기 설정 : preload
+                                    재생여부 : autoplay (자동재생)
+                                    사운드 설정 : muted (음소거)
+                                    반복재생여부 : loop (무한반복)
+                                -->
+                                    <source src="media/tuium_1920.mp4" type="video/mp4">
+                                </video>
+                    </div>
+                    <div class="tablet_main_book">
+                        <video muted="" preload="true" loop autoplay webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+                                <source src="media/tuium_1500.mp4" type="video/mp4">
+                            </video>
+                    </div>
+                    <div class="mobile_txt" data-aos="fade-down" data-aos-duration="1000">
+                        <p>PUBLISHING BRAND</p>
+                        <h3>T&nbsp;U&nbsp;I&nbsp;U&nbsp;M &nbsp;&nbsp; B&nbsp;O&nbsp;O&nbsp;K&nbsp;S</h3>
                     </div>
                     <div class="mobile_main_book">
-                        <img src="images/main/m_book.png" alt="mobile_main_img">
+                        <video muted="" preload="true" loop autoplay webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+                                <source src="media/tuium_650.mp4" type="video/mp4">
+                            </video>
                     </div>
-                    <h2><img src="images/main/w_Tuium_logo.png" alt="logo_img"></h2>
-
                 </div>
             </div>
             <div id="section1_wrap">
