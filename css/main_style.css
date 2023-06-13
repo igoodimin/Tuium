@@ -23,7 +23,7 @@ ol {
 body {
     font-family: 'Noto Sans KR';
     font-size: 16px;
-    background-color: #333;
+    background-color: #444;
 }
 
 /* 전체 구조 */
@@ -147,6 +147,7 @@ header {
     .gnb {
         display: none;
     }
+
     .m_gnb {
         display: block;
     }
@@ -164,7 +165,7 @@ header {
 /* main */
 /* 공통 */
 #main {
-    height: 100vh;
+    height: 950px;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -176,21 +177,26 @@ header {
 
 .main_book {
     position: absolute;
-    top: 200px;
-    left: 55%;
-    margin-left: -540px;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
 }
 
 .mobile_main_book {
     display: none;
 }
-
+.tablet_main_book{
+    display: none;
+}
 .main_content h2 {
     margin-top: 70px;
     position: absolute;
     top: 660px;
     left: 55%;
     margin-left: -92.5px;
+}
+.mobile_txt{
+    display: none;
 }
 
 /* main - mobile+tablet */
@@ -202,6 +208,7 @@ header {
 
     .main_content {
         width: 100%;
+        text-align: center;
     }
 
     .main_book {
@@ -212,19 +219,44 @@ header {
         left: 50%;
     }
 }
-
-/* main - mobile */
-@media (max-width:1080px) {
+/* main - tablet */
+@media (min-width:600px) and (max-width:1080px){
     .main_book {
         display: none;
     }
-
-    .mobile_main_book {
+    .tablet_main_book{
         display: block;
         position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -750px;
+    }
+}
+/* main - mobile */
+@media (max-width:650px) {
+    .main_book {
+        display: none;
+    }
+    .mobile_txt{
+        display: block;
+        position: absolute;
+        top: 300px;
         left: 50%;
-        top: 315px;
-        margin-left: -300px;
+        margin-left: -100px;
+        z-index: 2;
+        color: #fff;
+    }
+    .mobile_txt h3{
+        font-size: 20px;
+    }
+    .mobile_main_book {
+        width: 95%;
+        display: block; 
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -325px;
+        text-align: center;
     }
 }
 
